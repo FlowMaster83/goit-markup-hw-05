@@ -12,7 +12,7 @@
     --background-for-section-team: #F5F4FA;
     --black-for-projects: #212121;
     --another-grey: #AFB1B8;
-    --transision-duration-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-duration-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -156,7 +156,7 @@ span {
     letter-spacing: 0.02em;
     color: inherit;
     text-decoration: none;
-    transition: var(--transision-duration-function);
+    transition: color var(--transition-duration-function);
 }
 
 .current::after {
@@ -210,7 +210,7 @@ span {
     letter-spacing: 0.02em;
     color: var(--grey);
     text-decoration: none;
-    transition: var(--transision-duration-function);
+    transition: color var(--transition-duration-function);
 }
 
 .contact-to:hover,
@@ -223,7 +223,7 @@ span {
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
-    transition: var(--transision-duration-function);
+    transition: fill var(--transition-duration-function);
 }
 
 .envelope {
@@ -231,7 +231,7 @@ span {
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
-    transition: var(--transision-duration-function);
+    transition: fill var(--transition-duration-function);
 }
 
 .smartphone:hover .envelope,
@@ -661,13 +661,12 @@ span {
     align-items: center;
     width: 170px;
     height: 92px;
+    transition: fill var(--transition-duration-function);
 }
 
-.customer-item {
-    border: 1px solid var(--another-grey);
-    border-radius: 4px;
-    fill: var(--another-grey);
-    background-color: var(--white);
+.customer-link:hover .each-item,
+.customer-link:focus .each-item {
+    fill: var(--blue);
 }
 
 .each-item {
@@ -677,15 +676,18 @@ span {
     height: 60px;
 }
 
+.customer-item {
+    border: 1px solid var(--another-grey);
+    border-radius: 4px;
+    fill: var(--another-grey);
+    background-color: var(--white);
+    transition: border var(--transition-duration-function);
+}
+
 .customer-item:hover,
 .customer-item:focus {
     border: 1px solid var(--blue);
     border-radius: 4px;
-}
-
-.customer-link:hover .each-item,
-.customer-link:focus .each-item {
-    fill: var(--blue);
 }
 
 
@@ -766,7 +768,7 @@ span {
     height: 100%;
     overflow: auto;
     transform: translateY(100%);
-    transition: var(--transision-duration-function);
+    transition: var(--transition-duration-function);
 }
 
 .projects-link:hover .overlay-projects,
