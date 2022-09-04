@@ -176,11 +176,6 @@ span {
     color: var(--accent-color);
 }
 
-/* а можна застосувати ::after для підкреслення .current 
-і ::before для того щоб зробити анімоване підкреслення іншим при ховері ? 
-Типу transform: scaleX(0%) i при :hover transform: scaleX(100%) */
-
-
 .current {
     color: var(--accent-color);
 }
