@@ -487,11 +487,12 @@ span {
 
 .overlay-activities {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(47, 48, 58, 0.8);
     width: 100%;
     height: 70px;
-    padding-top: 27px;
-    padding-bottom: 27px;
     right: 0;
     bottom: 0;
     font-style: normal;
@@ -499,7 +500,6 @@ span {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
